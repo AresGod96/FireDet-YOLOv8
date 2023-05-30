@@ -9,6 +9,11 @@ Support two pretrained weights
 * [**FireDet640**](): trained with input size (640, 640)
 * [**FireDet1280**](): trained with large input size (1280, 1280)
 
+| Model         | input size<br><sup>(pixels) | mAP<sup>0.5 |
+| ------------- | --------------------------- | ----------- |
+| FireDet640    | 640                         | 0.77        |
+| FireDet1280   | 1280                        | 0.86        |
+
 ## Requirements
 * Python >= 3.7
 * CUDA >= 11.0 (Mine: 11.3)
