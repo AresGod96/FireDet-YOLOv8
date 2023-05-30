@@ -2,7 +2,11 @@
 [![python](https://img.shields.io/badge/python-3.7~3.9-blue.svg)](https://www.python.org/)
 [![pytorch](https://img.shields.io/badge/pytorch-1.10~2.0-orange)](https://pytorch.org/get-started/previous-versions/)
 [![cuda](https://img.shields.io/badge/cuda-11.0~11.7-green)](https://developer.nvidia.com/cuda-downloads)
-## Model: FireDet-v6 (Based: YOLOv8m)
+## Model: FireDet
+Based model: yolov8m
+Support two pretrained weights
+* FireDet640: trained with input size (640, 640)
+* FireDet1280: trained with large input size (1280, 1280)
 
 ## Requirements
 * Python >= 3.7
@@ -17,6 +21,7 @@
 ### Training
 Run training code either in two ways:
 1. Ultralytics CLI usage (recommended):
+
     From scratch
     ```bash
     yolo detect train data='train_data.yaml' model='yolov8m.pt' epochs=100 imgsz=640 batch=32 device=0,1 workers=8
