@@ -3,10 +3,11 @@
 [![pytorch](https://img.shields.io/badge/pytorch-1.10~2.0-orange)](https://pytorch.org/get-started/previous-versions/)
 [![cuda](https://img.shields.io/badge/cuda-11.0~11.7-green)](https://developer.nvidia.com/cuda-downloads)
 ## Model: FireDet
-Based model: yolov8m
+Based model: [YOLOv8m](https://docs.ultralytics.com/models/yolov8/#supported-tasks)
+
 Support two pretrained weights
-* FireDet640: trained with input size (640, 640)
-* FireDet1280: trained with large input size (1280, 1280)
+* [**FireDet640**](): trained with input size (640, 640)
+* [**FireDet1280**](): trained with large input size (1280, 1280)
 
 ## Requirements
 * Python >= 3.7
