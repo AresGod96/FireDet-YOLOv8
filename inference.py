@@ -11,7 +11,7 @@ import argparse
 if __name__ == "__main__":
 	# CLI mode
 	parser = argparse.ArgumentParser(description="Inference on images using ULTRALYTICS YOLOV8")
-	parser.add_argument("-w", "--weight", help="path to model weight", default="runs/detect/v6-yolov8m/weights/best.pt")
+	parser.add_argument("-w", "--weight", help="path to model weight", default="weights/FireDet1280.pt")
 	parser.add_argument("-d", "--dir", help="path to image dir")
 	parser.add_argument("-s", "--show", help="display image during inference", default=False, action="store_true")
 	parser.add_argument("-o", "--out-dir", help="dir to save inf image(s)", default=None)
