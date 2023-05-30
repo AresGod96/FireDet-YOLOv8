@@ -8,8 +8,7 @@ import torch
 print(torch.cuda.is_available())
 
 # Load the model
-model = YOLO("yolov8m.yaml")	# build a new model from scratch
-model = YOLO("yolov8m.pt")		# load a pretrained model (recommended for training)
+model = YOLO("weights/FireDet1280.pt")	
 
 model.train(
 	data="../dataset/train/data.yaml",
