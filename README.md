@@ -24,7 +24,7 @@ Support two pretrained weights
     ```
 * Conda env to run if using server: yolov8
 
-### Training
+## Training
 
 Assume that you have installed [**ultralytics**](https://github.com/ultralytics/ultralytics/), other dependencies and prepared training dataset in YOLO format. You can train the model either in two ways:
 1. Ultralytics CLI usage (recommended):
@@ -42,9 +42,7 @@ Assume that you have installed [**ultralytics**](https://github.com/ultralytics/
 
 2. Python script [train.py](train.py)
 
-### Inference
-
-#### Python
+## Inference in Python
 
 Run inference either in two ways:
 1. Ultralytics CLI
@@ -56,5 +54,5 @@ Run inference either in two ways:
 
 2. Python script [inference.py](inference.py)
 
-#### C++
+## Inference in C++
 
