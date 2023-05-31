@@ -34,7 +34,7 @@ Download and prepare the dataset in YOLO format. Tools such as [**Roboflow**](ht
 ## Training
 
 Assume that you have installed [**ultralytics**](https://github.com/ultralytics/ultralytics/), other dependencies and prepared training dataset in YOLO format. You can train the model either in two ways:
-1. Ultralytics CLI (recommended):
+**1. Ultralytics CLI (recommended)**
 
     From scratch
     ```bash
@@ -47,19 +47,19 @@ Assume that you have installed [**ultralytics**](https://github.com/ultralytics/
     ```
     See [**train docs**](https://docs.ultralytics.com/usage/cli/#train) for more details.
 
-2. Python script [`train.py`](train.py)
+**2. Python script** [`train.py`](train.py)
 
 ## Inference in Python
 
 Run inference either in two ways:
-1. Ultralytics CLI (videos)
+**1. Ultralytics CLI (videos)**
 
     ```bash
     yolo detect predict model='weights/FireDet1280.pt' source='assets/case2_house.mp4' show=True
     ```
     See [**predict docs**](https://docs.ultralytics.com/usage/cli/#predict) for more details.
 
-2. Python script [`inference.py`](inference.py) (both images and videos)
+**2. Python script** [`inference.py`](inference.py) (both images and videos)
 
 ## Inference in C++
 
