@@ -59,6 +59,6 @@ Run inference either in two ways:
 
 First, you need to convert the [**ONNX**](onnx) file of the model to [**TensorRT Engine**](https://github.com/NVIDIA/TensorRT) in order to run inference. Follow [**this repo**](https://github.com/triple-Mu/YOLOv8-TensorRT/blob/main/README.md), from the step **Build End2End Engine from ONNX** using `build.py`, you should get the converted engine file.
 
-In [`cpp/YOLOv8/YOLOv8/main.cpp`](cpp/inference.cpp), modify the engine path in line 30 [`const std::string engine_file_path`](cpp/inference.cpp#L27) and everything shall be ready to go.
+In [`cpp/inference.cpp`](cpp/inference.cpp), modify the engine path in line 30 [`const std::string engine_file_path`](cpp/inference.cpp#L27) and everything shall be ready to go.
 
 
