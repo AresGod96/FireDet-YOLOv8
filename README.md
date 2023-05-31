@@ -54,7 +54,7 @@ Suppose you have installed [**ultralytics**](https://github.com/ultralytics/ultr
 For validation, simply use the command-line usage provided by Ultralytics. First, change the `val` path in your YAML file to the folder used for validation, for example, `../benchmark/images` and run the following command:
 
 ```bash
-    yolo detect val data='data.yaml' model='weights/FireDet1280.pt' device=0,1
+yolo detect val data='data.yaml' model='weights/FireDet1280.pt' device=0,1
 ```
 
 ## Inference in Python
