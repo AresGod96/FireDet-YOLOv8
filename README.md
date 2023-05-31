@@ -33,7 +33,7 @@ Download and prepare the dataset in YOLO format. Tools such as [**Roboflow**](ht
 
 ## Training
 
-Assume that you have installed [**ultralytics**](https://github.com/ultralytics/ultralytics/), other dependencies and prepared training dataset in YOLO format. You can train the model either in two ways:
+Suppose you have installed [**ultralytics**](https://github.com/ultralytics/ultralytics/), other dependencies and prepared training dataset in YOLO format. You can train the model either in two ways:
 1. Ultralytics CLI (recommended)
 
     From scratch
@@ -48,6 +48,13 @@ Assume that you have installed [**ultralytics**](https://github.com/ultralytics/
     See [**train docs**](https://docs.ultralytics.com/usage/cli/#train) for more details.
 
 2. Python script [`train.py`](train.py)
+
+## Validation
+
+For validation, simply use the command-line usage provided by Ultralytics. First, change the `val` path in your YAML file to the folder used for validation, for example, `../benchmark/images` and run the following command:
+    ```bash
+    yolo detect val data='data.yaml' model='weights/FireDet1280.pt' device=0,1
+    ```
 
 ## Inference in Python
 
