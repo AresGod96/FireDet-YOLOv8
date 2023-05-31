@@ -27,6 +27,10 @@ Support two pretrained weights
     ```
 * Conda env to run if using server: yolov8
 
+## Dataset Preparation
+
+Download and prepare the dataset in YOLO format. Tools such as [**Roboflow**](https://app.roboflow.com/) are highly recommmended if you want to prepare your own fire dataset. The generated dataset should contain a YAML file, for example, `train_data.yaml`.
+
 ## Training
 
 Assume that you have installed [**ultralytics**](https://github.com/ultralytics/ultralytics/), other dependencies and prepared training dataset in YOLO format. You can train the model either in two ways:
