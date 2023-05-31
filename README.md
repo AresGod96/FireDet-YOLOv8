@@ -15,7 +15,7 @@ Support two pretrained weights
 | Model         | input size<br><sup>(pixels) | mAP<sup>0.5 |
 | ------------- | --------------------------- | ----------- |
 | FireDet640    | 640                         | 0.77        |
-| FireDet1280   | 1280                        | 0.86        |
+| FireDet1280   | 1280                        | **0.86**    |
 
 ## Requirements
 * Python >= 3.7
