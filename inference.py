@@ -11,10 +11,11 @@ import argparse
 if __name__ == "__main__":
 	# CLI mode
 	parser = argparse.ArgumentParser(description="Inference on images using ULTRALYTICS YOLOV8")
-	parser.add_argument("-w", "--weight", help="path to model weight", default="weights/FireDet1280.pt")
+	parser.add_argument("-w", "--weight", help="path to model weight", default="runs/detect/v6-yolov8m/weights/best.pt")
 	parser.add_argument("-d", "--dir", help="path to image dir")
 	parser.add_argument("-s", "--show", help="display image during inference", default=False, action="store_true")
 	parser.add_argument("-o", "--out-dir", help="dir to save inf image(s)", default=None)
+	parser.add_argument("-sz", "--imgsz", help="input image resolution", default=640, type=int)
 	parser.add_argument("-c", "--conf", help="confidence", default=0.25, type=float)
 	parser.add_argument("-iou", "--iou-thres", help="iou threshold", default=0.5, type=float)
 	args = parser.parse_args()
@@ -30,6 +31,7 @@ if __name__ == "__main__":
 	img_dir = args.dir
 	out_dir = args.out_dir
 	iou_thres = args.iou_thres
+	imgsz = args.imgsz
 	conf = args.conf
 	if not os.path.exists(img_dir):
 		print(f"Image dir {img_dir} not found!")
@@ -48,7 +50,7 @@ if __name__ == "__main__":
 		if img_path.endswith(".jpg") or img_path.endswith(".png"):
 			total += 1
 			img = cv2.imread(os.path.join(img_dir, img_path))
-			result = model.predict(img, imgsz=1280, conf=conf, iou=iou_thres)
+			result = model.predict(img, imgsz=imgsz, conf=conf, iou=iou_thres)
 			result = result[0]
 			if len(result.boxes) > 0:
 				TP += 1
