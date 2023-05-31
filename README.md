@@ -57,8 +57,8 @@ Run inference either in two ways:
 
 ## Inference in C++
 
-First, you need to convert the [**ONNX**](onnx) file of the model to [**TensorRT Engine**](https://github.com/NVIDIA/TensorRT) in order to run inference. Follow [**this repo**](https://github.com/triple-Mu/YOLOv8-TensorRT/blob/main/README.md), from the step **Build End2End Engine from ONNX** using `build.py`, you should get the converted engine file.
+First, you need to convert the [**ONNX**](weights/FireDet1280.onnx) file of the model to [**TensorRT Engine**](https://github.com/NVIDIA/TensorRT) in order to run inference. Follow [**this repo**](https://github.com/triple-Mu/YOLOv8-TensorRT/blob/main/README.md), from the step **Build End2End Engine from ONNX** using `build.py`, you should get the converted engine file.
 
-In [`cpp/inference.cpp`](cpp/inference.cpp), modify the engine path in line 30 [`const std::string engine_file_path`](cpp/inference.cpp#L27) along with the input size in line 78 [`cv::Size size = cv::Size{640, 640}`](cpp/inference.cpp#L78), and everything shall be ready to go.
+After installing TensorRT and OpenCV libraries, navigate to [`cpp/inference.cpp`](cpp/inference.cpp), modify the engine path in line 30 [`const std::string engine_file_path`](cpp/inference.cpp#L27) along with the input size in line 78 [`cv::Size size = cv::Size{640, 640}`](cpp/inference.cpp#L78), and everything shall be ready for inference using TensorRT.
 
 
