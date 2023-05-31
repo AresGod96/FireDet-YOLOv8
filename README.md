@@ -1,4 +1,4 @@
-# Fire Detection Model
+# Fire Detection
 [![python](https://img.shields.io/badge/python-3.7~3.9-blue.svg)](https://www.python.org/)
 [![pytorch](https://img.shields.io/badge/pytorch-1.10~2.0-orange)](https://pytorch.org/get-started/previous-versions/)
 [![cuda](https://img.shields.io/badge/cuda-11.0~11.7-green)](https://developer.nvidia.com/cuda-downloads)
