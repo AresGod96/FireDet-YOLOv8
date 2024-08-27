@@ -1,7 +1,6 @@
 """
 This script is used for the performance evaluation of FireDet models on videos
 Author: Minh Tu
-Copyright (c) PINTEL, Inc.
 
 Usage:
 ```
